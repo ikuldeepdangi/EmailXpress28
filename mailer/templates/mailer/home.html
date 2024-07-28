@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EmailXpress360</title>
+    <style>
+      /* Inline CSS styles */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f0f0;
+        padding: 20px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        width: 80%;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+      }
+      .container:hover {
+        transform: translateY(-5px);
+      }
+      h1 {
+        color: #007bff;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #555;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease-in-out;
+      }
+      .btn:hover {
+        background-color: #0056b3;
+      }
+      @media (max-width: 768px) {
+        .container {
+          padding: 20px;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        .btn {
+          padding: 10px 20px;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to EmailXpress360</h1>
+      <p>
+        EmailXpress360 is a powerful tool that allows you to send emails to
+        multiple recipients with ease. Customize your email's subject and body,
+        and send it to as many people as you want.
+      </p>
+      <a href="{% url 'send_email' %}" class="btn">Start</a>
+    </div>
+  </body>
+</html>
